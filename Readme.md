@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Sergey Monichev](https://up.htmlacademy.ru/htmlcss/35/user/2198327).
-* Наставник: `Виктория Никитина`.(https://htmlacademy.ru/profile/id1217273)
+* Наставник:     `Виктория Никитина`.(https://htmlacademy.ru/profile/id1217273)
 
 ---
 
