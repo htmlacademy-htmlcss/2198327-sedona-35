@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.page-container {
+  width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.page-header {}
+
+.logo-link {}
+
+.logo {}
+
+.navigation {}
+
+.navigation-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation-item {}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-user-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation-user {}
+
+.navigation-user-link {
+  text-decoration: none;
+}
+
+.navigation-link-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756157;
+  text-transform: uppercase;
+}
+
+.main-index {
+  color: #000000;
+}
+
+.welcome {
+  background-color: #deebf3;
+  background-image: url("../images/hils.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+}
+
+.adventures {
+  text-align: center;
+}
+
+.adventures-caption {
+  padding: 0;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  width: 650px;
+  text-transform: uppercase;
+}
+
+.adventures-text {
+  padding: 0;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  width: 700px;
+  color: #333333;
+}
+
+.adventures-list {
+
+}
+
+
+.adventures-title {
+  padding: 0;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  width: 650px;
+  text-transform: uppercase;
+}
+
+.adventures-description {
+  padding: 0;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  width: 650px;
+}
+
+.village {
+  background-color: #deebf3;
+  background-image: url("../images/сity.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+}
+
+.adventures-item-first {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.adventures-item-second {
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+
+.adventures-item-third {
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+
+.adventures-item-fourth {
+  color: #ffffff;
+  background-color: #83B3D3
+}
+
+.adventures-item-fifth {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.adventures-item-sixth {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.adventures-item-seventh {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.adventures-item-eighth {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+.village-image.png {
+  width: 74px;
+  height: 70px;
+  color: #83B3D3;
+  background-color: #deebf3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.interested {
+  text-align: center;
+  list-style: none;
+}
+
+.interested-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.interested-description {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.button-button-hotel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #756157;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.page-footer {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-footer a {
+  color: inherit;
+}
+
+.footer-newsletter {
+  width: 1200px;
+  height: 414px;
+  background-color: #deebf3;
+  background-image: url("../images/subscribe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+}
+
+.footer-newsletter-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-newsletter-description {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.mail-address {
+
+}
+
+
+.button-subscription {
+
+}
+
+.appointment-form {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.appointment-date {
+  width: 452px;
+  height: 52px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.appointment-date-mail {
+  padding: 8px 50px;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: none;
+}
+
+
+.button-subscription {
+  padding: 8px 50px;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+
+.footer-contacts {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+
+.footer-social-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-item {
+
+}
+
+.button {
+
+}
+
+.vk {
+
+}
+
+.tg {
+
+}
+
+.yt {
+
+}
+
+.footer-phone {
+
+}
+
+.footer-phone-number {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-Logo-icon {
+
+}
