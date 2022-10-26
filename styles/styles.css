@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+.html {
+  height: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -28,8 +32,10 @@
 }
 
 body {
-  padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -89,6 +95,10 @@ body {
   text-transform: uppercase;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   color: #000000;
 }
@@ -126,9 +136,7 @@ body {
   color: #333333;
 }
 
-.adventures-list {
-
-}
+.adventures-list {}
 
 
 .adventures-title {
@@ -282,14 +290,10 @@ body {
   text-align: center;
 }
 
-.mail-address {
-
-}
+.mail-address {}
 
 
-.button-subscription {
-
-}
+.button-subscription {}
 
 .appointment-form {
   padding: 0;
@@ -341,29 +345,17 @@ body {
   list-style: none;
 }
 
-.social-item {
+.social-item {}
 
-}
+.button {}
 
-.button {
+.vk {}
 
-}
+.tg {}
 
-.vk {
+.yt {}
 
-}
-
-.tg {
-
-}
-
-.yt {
-
-}
-
-.footer-phone {
-
-}
+.footer-phone {}
 
 .footer-phone-number {
   font-weight: 700;
@@ -374,6 +366,4 @@ body {
   text-decoration: none;
 }
 
-.footer-Logo-icon {
-
-}
+.footer-Logo-icon {}
