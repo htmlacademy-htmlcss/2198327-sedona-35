@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+.html {
+  height: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -28,8 +32,10 @@
 }
 
 body {
-  padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -44,21 +50,35 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.page-header {}
+.page-header {
+  padding: 0 71px 0 238px;
+  position: relative;
+}
 
-.logo-link {}
+.logo-link {
+  left: 70px;
+  position: absolute;
+  top: 0;
+}
 
 .logo {}
 
-.navigation {}
+.navigation {
+  display: flex;
+  margin: 0 auto;
+}
 
 .navigation-list {
+  display: flex;
+  width: 600px;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.navigation-item {}
+.navigation-item {
+  padding: 20px 16px;
+}
 
 .navigation-link {
   font-weight: 700;
@@ -68,13 +88,16 @@ body {
   text-decoration: none;
 }
 
-.navigation-user-list {
+.navigation-user {
+  display: flex;
+  max-width: 350px;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 auto;
   list-style: none;
 }
+.navigation-user-list {
 
-.navigation-user {}
+}
 
 .navigation-user-link {
   text-decoration: none;
@@ -89,6 +112,11 @@ body {
   text-transform: uppercase;
 }
 
+
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   color: #000000;
 }
@@ -100,14 +128,22 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   text-align: center;
+  padding: 48px 0 78px 0;
 }
 
 .adventures {
   text-align: center;
 }
 
+.adventures-city-description {
+  width: 1200px;
+  height: 282px;
+  top: 485px;
+  overflow: hidden;
+}
+
 .adventures-caption {
-  padding: 0;
+  padding: 69px 290px 25px 290px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
@@ -117,7 +153,7 @@ body {
 }
 
 .adventures-text {
-  padding: 0;
+  padding: 0 274px 90px 275px;
   margin: 0 auto;
   font-weight: 400;
   font-size: 22px;
@@ -127,17 +163,44 @@ body {
 }
 
 .adventures-list {
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
+.adventures-item {
+  display: flex;
+}
+
+.adventures-container {
+  padding:92px 85px 111px 85px;
+  min-height: 384px;
+  box-sizing: border-box;
+  width: 400px;
+}
+
+.adventures-container-center {
+  padding:103px 85px 121px 85px;
+  min-height: 384px;
+  box-sizing: border-box;
+  width: 400px;
+}
+
+.adventures-container-use {
+  padding:80px 85px 81px 85px;
+  min-height: 384px;
+  box-sizing: border-box;
+  width: 400px;
+}
 
 .adventures-title {
-  padding: 0;
   margin: 0 auto;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  width: 650px;
   text-transform: uppercase;
 }
 
@@ -145,56 +208,62 @@ body {
   padding: 0;
   margin: 0 auto;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 24px;
-  width: 650px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
-.village {
-  background-color: #deebf3;
-  background-image: url("../images/сity.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-  text-align: center;
+.adventures-img-container {
+  width: 800px;
+  height: 100%;
+  overflow: hidden;
 }
 
-.adventures-item-first {
+.adventures-img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+.adventures-item {
+  list-style: none;
+}
+
+.advantures-item—hotel {
   color: #ffffff;
   background-color: #82B3D3;
 }
 
-.adventures-item-second {
+.advantures-item—square {
   color: #ffffff;
   background-color: #83B3D3;
 }
 
-.adventures-item-third {
+.advantures-item—road {
   color: #ffffff;
   background-color: #83B3D3;
 }
 
-.adventures-item-fourth {
+.advantures-item—tourists {
   color: #ffffff;
   background-color: #83B3D3
 }
 
-.adventures-item-fifth {
+.advantures-item—bridge {
   color: #ffffff;
   background-color: #82B3D3;
 }
 
-.adventures-item-sixth {
+.dvantures-item—house {
   color: #000000;
   background-color: #ffffff;
 }
 
-.adventures-item-seventh {
+.advantures-item—food {
   color: #000000;
   background-color: #ffffff;
 }
 
-.adventures-item-eighth {
+.advantures-item—souvenirs {
   color: #000000;
   background-color: #ffffff;
 }
@@ -211,12 +280,14 @@ body {
 }
 
 .interested {
+  width: 1200px;
+  height: 406px;
   text-align: center;
   list-style: none;
 }
 
 .interested-title {
-  padding: 0;
+  padding:96px 451px 20px 451px;
   margin: 0;
   font-weight: 700;
   font-size: 30px;
@@ -225,7 +296,7 @@ body {
 }
 
 .interested-description {
-  padding: 0;
+  padding: 0 304px 54px 304px;
   margin: 0;
   font-weight: 400;
   font-size: 22px;
@@ -233,7 +304,12 @@ body {
   color: #333333;
 }
 
-.button-button-hotel {
+.button-hotel {
+  padding: 0 412px 96px 412px;
+}
+
+.button-hotel-text {
+  padding:8px 50px 8px 50px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -264,22 +340,24 @@ body {
 }
 
 .footer-newsletter-title {
-  padding: 0;
+  padding:96px 396px 20px 396px;
   margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  color: #ffffff;
 }
 
 .footer-newsletter-description {
-  padding: 0;
+  padding: 0 104px 106px 104px;
   margin: 0;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 26px;
   text-align: center;
+  color: #ffffff;
 }
 
 .mail-address {
@@ -287,37 +365,36 @@ body {
 }
 
 
-.button-subscription {
-
-}
+.button-subscription {}
 
 .appointment-form {
   padding: 0;
   margin: 0 auto;
 }
 
+.assigned-frame {
+  adding: 0 0 104px 258px;
+}
+
 .appointment-date {
-  width: 452px;
-  height: 52px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
+
 }
 
 .appointment-date-mail {
-  padding: 8px 50px;
-  gap: 10px;
+  width: 452px;
+  height: 52px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
   text-transform: none;
 }
 
 
 .button-subscription {
-  padding: 8px 50px;
-  gap: 10px;
+  width: 352px;
+  height: 52px;
+  padding: 8px 50px 8px 50px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -325,10 +402,18 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
+  border: none;
 }
 
+.contacts-container {
+  padding: 40px 70px 30px 70px;
+  justify-content:space-between;
+  display: flex;
+  flex-direction: row;
+}
 
 .footer-contacts {
+
   color: #000000;
   background-color: #ffffff;
 }
@@ -336,6 +421,8 @@ body {
 
 
 .footer-social-list {
+  display: flex;
+  justify-content:space-between;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -345,21 +432,13 @@ body {
 
 }
 
-.button {
+.button {}
 
-}
+.vk {}
 
-.vk {
+.tg {}
 
-}
-
-.tg {
-
-}
-
-.yt {
-
-}
+.yt {}
 
 .footer-phone {
 
@@ -374,6 +453,4 @@ body {
   text-decoration: none;
 }
 
-.footer-Logo-icon {
-
-}
+.footer-Logo-icon {}
