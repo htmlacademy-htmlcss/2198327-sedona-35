@@ -70,10 +70,11 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   width: 600px;
   padding: 0;
   margin: 0;
-  list-style: none;
+  llist-style-type: none
 }
 
 .navigation-item {
@@ -91,22 +92,46 @@ body {
 .navigation-user {
   display: flex;
   max-width: 350px;
+  min-height: 64px;
   padding: 0;
   margin: 0 0 0 auto;
-  list-style: none;
+  list-style-type: none
 }
-.navigation-user-list {
 
+.navigation-user-list {
+  display: flex;
+  width: 600px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none
 }
 
 .navigation-user-link {
   text-decoration: none;
 }
 
+.navigation-search {
+  padding: 4px 0 0 21px;
+}
+
+.navigation-search-img {
+  padding: 19px 4px 30px 75px;
+}
+
+.navigation-like-img {
+  padding: 19px 6px 30px 0;
+}
+.navigation-user-button {
+  width: 160px;
+  height: 36px;
+  padding: 17px 0 14px 20px;
+}
+
 .navigation-link-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 34px 8px 34px;
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
@@ -225,7 +250,7 @@ body {
 }
 
 .adventures-item {
-  list-style: none;
+  list-style-type: none
 }
 
 .advantures-item—hotel {
@@ -283,7 +308,7 @@ body {
   width: 1200px;
   height: 406px;
   text-align: center;
-  list-style: none;
+  list-style-type: none
 }
 
 .interested-title {
@@ -422,14 +447,17 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content:space-between;
+  max-width: 236px;
+  min-height: 40px;
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style-type: none
 }
 
 .social-item {
-
+  padding: 13px;
 }
 
 .button {}
