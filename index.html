@@ -16,7 +16,7 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="home.html">Главная</a>
+              <a class="navigation-link-home " href="home.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about.html">О Седоне</a>
@@ -62,7 +62,7 @@
             <p class="adventures-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
           <ul class="adventures-list">
-            <li class="adventures-item advantures-item—hotel">
+            <li class="adventures-item advantures-item--blue">
               <div class="adventures-container">
                 <h3 class="adventures-title">Настоящий городок</h3>
                 <p class="adventures-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -77,7 +77,7 @@
                 <p class="adventures-description">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
-            <li class="adventures-item advantures-item—road">
+            <li class="adventures-item advantures-item--olive">
               <div class="adventures-container-center">
                 <h3 class="adventures-title">Красивая дорога</h3>
 
@@ -90,9 +90,9 @@
                 <p class="adventures-description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
-            <li class="adventures-item advantures-item—bridge">
+            <li class="adventures-item advantures-item--blue">
               <div class="adventures-img-container">
-                <img class="canyon" src="images/canyon.jpg" width="800" height="384" alt="Каньон">
+                <img class="adventures-img" src="images/canyon.jpg" width="800" height="384" alt="Каньон">
               </div>
               <div class="adventures-container">
                 <h3 class="adventures-title">Там есть мост дьявола</h3>
@@ -104,21 +104,21 @@
             <li class="adventures-item advantures-item—house">
               <div class="adventures-container-use">
                 <img class="village-image.png" src="images/home.svg" width="76" height="72" alt="Дом">
-                <h3 class="adventures-title">Жильё</h3>
+                <h3 class="adventures-title-last-block">Жильё</h3>
                 <p class="adventures-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </div>
             </li>
             <li class="adventures-item advantures-item—food">
               <div class="adventures-container-use">
                 <img class="village-image.png" src="images/burger.svg" width="75" height="70" alt="Бургер">
-                <h3 class="adventures-title">Еда</h3>
+                <h3 class="adventures-title-last-block">Еда</h3>
                 <p class="adventures-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </div>
             </li>
-            <li class="adventures-item advantures-item—souvenirs">
+            <li class="adventures-item advantures-item--olive">
               <div class="adventures-container-use">
                 <img class="village-image" src="images/gift.svg" width="65" height="76" alt="подарок">
-                <h3 class="adventures-title">Сувениры</h3>
+                <h3 class="adventures-title-last-block">Сувениры</h3>
                 <p class="adventures-description">Не только китайского, но и настоящего местного производства!</p>
               </div>
             </li>
@@ -139,13 +139,12 @@
           <h2 class="footer-newsletter-title">Подпишитесь на рассылку</h2>
           <p class="footer-newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form class="mail-address" action="https://echo.htmlacademy.ru/" method="post"></form>
-          <p class="appointment-form">
-            <label for="appointment-date"></label>
-            <input class="appointment-date-mail" type="text" id="appointment-date" name="appointment-date"
-              placeholder="Ваш e-mail">
-            <button class="button-subscription" type="submit">подписаться</button>
-          </p>
+          <form class="mail-address" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="appointment-date"></label>
+              <input class="appointment-date-mail" type="text" id="appointment-date" name="appointment-date"
+                placeholder="Ваш e-mail">
+              <button class="button-subscription" type="submit">подписаться</button>
+          </form>
         </section>
         <div class="contacts-container">
           <section class=footer-contacts>
@@ -178,7 +177,6 @@
                 </a>
               </li>
             </ul>
-
           </section>
           <section class="footer-phone">
             <h3 class="footer-phone-title"> <span class="visually-hidden">Телефон</span> </h3>
