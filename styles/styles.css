@@ -70,15 +70,25 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   width: 600px;
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style-type: none
 }
 
 .navigation-item {
   padding: 20px 16px;
 }
+
+.navigation-link-home {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
 
 .navigation-link {
   font-weight: 700;
@@ -88,25 +98,63 @@ body {
   text-decoration: none;
 }
 
+.navigation-link-home::before {
+content: "";
+width: 68px;
+border: 2px solid #756257;;
+display: block;
+position: absolute;
+bottom: 0;
+}
+
+.navigation-link-home .navigation-link-home::before {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+
 .navigation-user {
   display: flex;
   max-width: 350px;
+  min-height: 64px;
   padding: 0;
   margin: 0 0 0 auto;
-  list-style: none;
+  list-style-type: none
 }
-.navigation-user-list {
 
+.navigation-user-list {
+  display: flex;
+  width: 600px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none
 }
 
 .navigation-user-link {
   text-decoration: none;
 }
 
+.navigation-search {
+  padding: 4px 0 0 21px;
+}
+
+.navigation-search-img {
+  padding: 19px 4px 30px 75px;
+}
+
+.navigation-like-img {
+  padding: 19px 6px 30px 0;
+}
+.navigation-user-button {
+  width: 160px;
+  height: 36px;
+  padding: 17px 0 14px 20px;
+}
+
 .navigation-link-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 34px 8px 34px;
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
@@ -173,6 +221,17 @@ body {
 
 .adventures-item {
   display: flex;
+  background: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+
+.advantures-item--blue {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.advantures-item--olive {
+  background: rgba(131, 179, 211, 0.2);
 }
 
 .adventures-container {
@@ -197,11 +256,29 @@ body {
 }
 
 .adventures-title {
-  margin: 0 auto;
+  margin: 0 auto 62px;
+  width: 178px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  position: relative;
+}
+
+.adventures-title::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: -34px;
+}
+
+.advantures-item--blue .adventures-title::before {
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .adventures-description {
@@ -224,35 +301,6 @@ body {
   display: block;
 }
 
-.adventures-item {
-  list-style: none;
-}
-
-.advantures-item—hotel {
-  color: #ffffff;
-  background-color: #82B3D3;
-}
-
-.advantures-item—square {
-  color: #ffffff;
-  background-color: #83B3D3;
-}
-
-.advantures-item—road {
-  color: #ffffff;
-  background-color: #83B3D3;
-}
-
-.advantures-item—tourists {
-  color: #ffffff;
-  background-color: #83B3D3
-}
-
-.advantures-item—bridge {
-  color: #ffffff;
-  background-color: #82B3D3;
-}
-
 .dvantures-item—house {
   color: #000000;
   background-color: #ffffff;
@@ -268,7 +316,6 @@ body {
   background-color: #ffffff;
 }
 
-
 .village-image.png {
   width: 74px;
   height: 70px;
@@ -279,11 +326,22 @@ body {
   background-position: center top;
 }
 
+.adventures-title-last-block {
+  margin: 0 auto 30px;
+  padding-top: 30px;
+  width: 178px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  position: relative;
+}
+
 .interested {
   width: 1200px;
   height: 406px;
   text-align: center;
-  list-style: none;
+  list-style-type: none
 }
 
 .interested-title {
@@ -361,7 +419,9 @@ body {
 }
 
 .mail-address {
-
+  width: 684px;
+  margin: 0 auto;
+  display: flex;
 }
 
 
@@ -382,17 +442,18 @@ body {
 
 .appointment-date-mail {
   width: 452px;
-  height: 52px;
-  font-weight: 700;
+  height: 47px;
+  font-weight: 400;
+  font-style: normal;
   font-size: 18px;
   line-height: 24px;
-  text-align: left;
+
   text-transform: none;
 }
 
 
 .button-subscription {
-  width: 352px;
+  width: 232px;
   height: 52px;
   padding: 8px 50px 8px 50px;
   font-weight: 700;
@@ -413,7 +474,6 @@ body {
 }
 
 .footer-contacts {
-
   color: #000000;
   background-color: #ffffff;
 }
@@ -422,19 +482,24 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content:space-between;
+  max-width: 236px;
+  min-height: 40px;
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style-type: none
 }
 
 .social-item {
-
+  padding: 13px;
 }
 
 .button {}
 
-.vk {}
+.vk {
+
+}
 
 .tg {}
 
