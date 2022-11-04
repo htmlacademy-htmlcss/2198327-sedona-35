@@ -470,7 +470,7 @@ bottom: 0;
 
 .contacts-container {
   padding: 40px 70px 30px 70px;
-  justify-content:space-between;
+  justify-content: flex-start;
   display: flex;
   flex-direction: row;
 }
@@ -485,7 +485,7 @@ bottom: 0;
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content: flex-start;
   max-width: 236px;
   min-height: 40px;
   padding: 0;
