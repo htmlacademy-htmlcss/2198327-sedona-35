@@ -53,6 +53,7 @@ body {
 .page-header {
   padding: 0 71px 0 238px;
   position: relative;
+  height: 64px;
 }
 
 .logo-link {
@@ -256,6 +257,7 @@ bottom: 0;
 }
 
 .adventures-title {
+  font-family: 'PT Sans';
   margin: 0 auto 62px;
   width: 178px;
   font-weight: 700;
@@ -345,6 +347,7 @@ bottom: 0;
 }
 
 .interested-title {
+  font-family: 'PT Sans';
   padding:96px 451px 20px 451px;
   margin: 0;
   font-weight: 700;
@@ -398,6 +401,7 @@ bottom: 0;
 }
 
 .footer-newsletter-title {
+  font-family: 'PT Sans';
   padding:96px 396px 20px 396px;
   margin: 0;
   font-weight: 700;
