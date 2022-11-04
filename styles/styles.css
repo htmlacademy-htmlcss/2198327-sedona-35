@@ -192,7 +192,7 @@ bottom: 0;
 }
 
 .adventures-caption {
-  padding: 69px 290px 25px 290px;
+  padding: 69px 290px 25px 260px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
@@ -202,7 +202,7 @@ bottom: 0;
 }
 
 .adventures-text {
-  padding: 0 274px 90px 275px;
+  padding: 0 274px 90px 226px;
   margin: 0 auto;
   font-weight: 400;
   font-size: 22px;
@@ -508,6 +508,7 @@ bottom: 0;
 .yt {}
 
 .footer-phone {
+  display: flex;
 
 }
 
