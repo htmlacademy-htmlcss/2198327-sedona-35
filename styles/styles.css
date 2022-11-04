@@ -365,6 +365,7 @@ bottom: 0;
 }
 
 .button-hotel {
+  display: block;
   padding: 0 412px 96px 412px;
 }
 
@@ -455,7 +456,6 @@ bottom: 0;
 
 
 .button-subscription {
-  width: 232px;
   height: 52px;
   padding: 8px 50px 8px 50px;
   font-weight: 700;
@@ -494,6 +494,7 @@ bottom: 0;
 }
 
 .social-item {
+  display: block;
   padding: 13px;
 }
 
@@ -508,8 +509,7 @@ bottom: 0;
 .yt {}
 
 .footer-phone {
-  display: flex;
-
+  display: block;
 }
 
 .footer-phone-number {
@@ -521,4 +521,8 @@ bottom: 0;
   text-decoration: none;
 }
 
+
+.footer-phone {
+  display: block;
+}
 .footer-Logo-icon {}
