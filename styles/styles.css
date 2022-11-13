@@ -1158,11 +1158,14 @@ body {
   top: -26px;
   left: 60px;
   position: absolute;
-  background-image: url("../images/icons/info-icon.svg");
+  background-image:url("../images/i.svg");
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
   cursor: pointer;
 }
+
 
 .popover-information-link:hover + .popover {
   display: block;
