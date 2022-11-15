@@ -53,7 +53,7 @@ body {
 .page-header {
   padding: 1px 70px 0 239px;
   position: relative;
-  height: 63px;
+  min-height: 63px;
 }
 
 .logo-link {
@@ -555,6 +555,7 @@ body {
 }
 
 .subscription-form {
+  display: flex;
   padding: 12px 258px 104px 258px;
 }
 
@@ -590,6 +591,7 @@ body {
 
 .button-subscription {
   font-family: "PT Sans", "Arial", sans-serif;
+  width: 232px;
   height: 52px;
   padding: 9px 50px 12px 48px;
   font-weight: 700;
@@ -1074,7 +1076,7 @@ body {
 
 .calendar {
   position: absolute;
-  background-image: url(../images/icons/calendar-icon.svg);
+  background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   display: block;
   width: 18px;
@@ -1114,9 +1116,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-
-
-
   position: absolute;
   z-index: 1;
   box-sizing: border-box;
