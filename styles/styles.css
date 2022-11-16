@@ -1089,11 +1089,11 @@ body {
 
 .child-info {
   position: relative;
+  margin-right: 46px;
 }
 
-
-
 .popover-info {
+  display: flex;
   position: relative;
   margin-left: 7px;
 }
@@ -1154,7 +1154,6 @@ body {
   background-color: #82b3d3;
   top: -26px;
   left: 60px;
-  position: absolute;
   background-image:url("../images/i.svg");
   background-size:cover;
   background-repeat: no-repeat;
@@ -1162,6 +1161,7 @@ body {
   text-align: center;
   cursor: pointer;
   align-items: center;
+  margin: 6px 50px 10px -42px;
 }
 
 
