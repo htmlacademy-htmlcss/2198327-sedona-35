@@ -76,17 +76,8 @@ body {
   list-style-type: none
 }
 
-.navigation-item {
-  padding: 20px 16px;
-}
-
 .navigation-link-home {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-  text-decoration: none;
-  padding: 21px 0;
+  position: relative;
 }
 
 .navigation-link {
@@ -95,6 +86,8 @@ body {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+  padding: 20px 16px;
+  display: block;
 }
 
 .navigation-link-home::before {
@@ -131,7 +124,6 @@ body {
   display: flex;
   padding: 14px 0 14px 20px;
 }
-
 
 .navigation-user-list::after {
   content: "";
@@ -174,7 +166,7 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 13px;
+  top: 11px;
   right: 4px;
   background: #7DB54F;
   color: #ffffff;
@@ -252,7 +244,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom, center top;
   text-align: center;
-  padding: 52px 0 78px 0;
+  padding: 52px 0 76px 0;
 }
 
 .adventures {
@@ -372,10 +364,8 @@ body {
   display: block;
 }
 
-
 .advantures-user {
   color: #000000;
-  background-color: #deebf3;
   text-align: center;
   position: relative;
   padding: 182px 85px 81px 85px;
@@ -412,6 +402,9 @@ body {
   top: 80px;
 }
 
+.advantages-user--oliva {
+  background-color: rgba(131, 179, 211, 0.12);
+}
 
 .adventures-user-title {
   font-weight: 700;
@@ -421,7 +414,6 @@ body {
   padding: 0;
   margin: 0 0 30px;
 }
-
 
 .adventures-title-last-block {
   margin: 0 auto 30px;
@@ -483,18 +475,15 @@ body {
 
 }
 
-
 .button-hotel-text:focus {
   background-color: #615048;
   outline: none;
 }
 
-
 .button-hotel-text:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .button-hotel-text--disabled,
 .button-hotel-text--disabled:hover,
@@ -599,23 +588,19 @@ body {
   box-sizing: border-box;
 }
 
-
 .button-subscription:hover {
   background-color: #68A2CA;
 }
-
 
 .button-subscription:focus {
   background-color: #68A2CA;
   outline: none;
 }
 
-
 .button-subscription:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .button-subscription--disabled,
 .button-subscription--disabled:hover,
@@ -627,16 +612,18 @@ body {
 }
 
 .contacts-container {
-  padding: 10px 70px 30px 70px;
+  padding: 10px 70px 30px 68px;
   display: flex;
   flex-direction: row;
+  width: 1062px;
 }
 
 .footer-contacts {
   color: #000000;
   background-color: #ffffff;
+  width: 150px;
+  padding-top: 4px;
 }
-
 
 .footer-social-list {
   display: flex;
@@ -666,6 +653,9 @@ body {
   fill: #68A2CA;
 }
 
+.button-social:focus {
+  outline: none;
+}
 
 .button-social:active .icon-social {
   fill: rgba(104, 162, 202, 0.3);
@@ -680,23 +670,19 @@ body {
   fill: #ffffff;
 }
 
-.vk {}
-
-.tg {}
-
-.yt {
-  margin-right: 40px;
-}
-
-
-
 .footer-phone {
   display: block;
   padding-top: 10px;
 }
 
+.footer-phone {
+  padding: 9px 142px 5px;
+  width: 796px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .footer-phone-number {
-  padding: 0 195px 5px 195px;
   width: 331px;
   display: inline-block;
   font-weight: 400;
@@ -708,53 +694,53 @@ body {
   color: #000000;
 }
 
-
 .footer-phone-number:hover {
-  color: #756157
+  color: #756157;
 }
 
 .footer-phone-number:focus {
-  color: #756157
+  color: #756157;
+  outline: none;
 }
 
 .footer-phone-number:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
-
 .footer-phone-number--disabled,
 .footer-phone-number--disabled:hover,
 .footer-phone-number--disabled:focus,
 .footer-phone-number--disable:active {
-  color: #E5E5E5;
   cursor: default;
   color: #ffffff;
 }
-
 
 .footer-phone {
   display: block;
 }
 
 .footer-logo {
-  padding-left: 40px;
-  padding-top: 37px;
+  padding-top: 39px;
+  width: 115px;
 }
-
 
 .html-logo-icon {
   fill: #000000;
 }
 
-.html-logo-icon:hover {
+.footer-logo-icon:hover .html-logo-icon {
   fill: #756157;
 }
 
-.html-logo-icon:focus {
+.footer-logo-icon:focus .html-logo-icon {
   fill: #756157;
 }
 
-.html-logo-icon:active {
+.footer-logo-icon:focus {
+  outline: none;
+}
+
+.footer-logo-icon:active .html-logo-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -762,7 +748,7 @@ body {
 .html-logo-icon--disabled:hover,
 .html-logo-icon--disabled:focus,
 .html-logo-icon--disable:active {
-  color: #E5E5E5;
+  color: #e5e5e5;
   cursor: default;
   fill: #ffffff;
 }
